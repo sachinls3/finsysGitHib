@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="ejagruti.finsys.modules.runTest" time="54.838" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="src/test/resources/FeatureCollections/CreateCompany.feature"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Sachin\Cucumber\finsys"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Sachin\Cucumber\finsys"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\WINDOWS\TEMP\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Lenovo\FusionEngine;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\MyRun;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\apache-maven-3.5.0\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.5.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\WINDOWS\system32\config\systemprofile"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="LAPTOP-S9QV7E96$"/>
+    <property name="java.class.path" value="C:\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -Dcucumber.options=src/test/resources/FeatureCollections/CreateCompany.feature"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\apache-maven-3.5.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Create Company" name="Create Company with all valid inputs" time="54.838">
+    <error message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-S9QV7E96&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d95d6b88-da91-4a35-8d96-d73056f43a7a" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-S9QV7E96&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d95d6b88-da91-4a35-8d96-d73056f43a7a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at ejagruti.finsys.modules.CreateNewCompany.AfterEveryScenario(CreateNewCompany.java:627)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 62 more
+</error>
+    <system-out>@CreateComapny
+Feature: Create Company
+
+  Background: user is successfully logged in                     &amp;#27;[90m# src/test/resources/FeatureCollections/CreateCompany.feature:7&amp;#27;[0m
+new scenario is started Create Company with all valid inputs
+Printing Done
+new scenario is started Create Company with all valid inputs
+firefox -------------------
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser opens the &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mfirefox&amp;#27;[0m&amp;#27;[32m&quot; browser&amp;#27;[0m                        &amp;#27;[90m# login.OpenBrowser(String)&amp;#27;[0m
+url:http://localhost:90/finsys
+2018-02-07 17:39:39 INFO  login:66 - Step:1 PASSED: user enter the url as http://localhost:90/finsys
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enter the url &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mhttp://localhost:90/finsys&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m          &amp;#27;[90m# login.LaunchApplication(String)&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2018-02-07 17:39:39 INFO  login:82 - Step:2 PASSED- user is on the application login page
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser is on the application login page&amp;#27;[0m                   &amp;#27;[90m# login.LoginPage()&amp;#27;[0m
+2018-02-07 17:39:39 INFO  login:98 - Step:3 PASSED- user enters dummyfm as username
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser enters &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mdummyfm&amp;#27;[0m&amp;#27;[32m&quot; as username&amp;#27;[0m                       &amp;#27;[90m# login.EnterUserName(String)&amp;#27;[0m
+passw0rd ---------------
+2018-02-07 17:39:39 INFO  login:116 - Step:4 PASSED- user enters passw0rd as password
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mpassw0rd&amp;#27;[0m&amp;#27;[32m&quot; as password&amp;#27;[0m                       &amp;#27;[90m# login.EnterPassword(String)&amp;#27;[0m
+2018-02-07 17:39:39 INFO  login:133 - Step:5 PASSED- user clicks on login button
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser clicks on login button&amp;#27;[0m                              &amp;#27;[90m# login.LoginButtonClick()&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2018-02-07 17:39:40 INFO  login:149 - Step:6 PASSED- user is on the application home page
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32muser is on the application home page&amp;#27;[0m                    &amp;#27;[90m# login.HomePage()&amp;#27;[0m
+Welcome dummy[FM] --------------------
+2018-02-07 17:39:40 INFO  login:167 - Step:7 PASSED- user gets the message starting with Welcome on the top
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser gets the message starting with &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWelcome&amp;#27;[0m&amp;#27;[32m&quot; on the top&amp;#27;[0m &amp;#27;[90m# login.CheckForHomePageMessage(String)&amp;#27;[0m
+
+  @CreateComapny @SmokeTest
+  Scenario: Create Company with all valid inputs                                                          &amp;#27;[90m# src/test/resources/FeatureCollections/CreateCompany.feature:18&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2018-02-07 17:39:41 INFO  login:149 - Step:8 PASSED- user is on the application home page
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32muser is on the application home page&amp;#27;[0m                                                            &amp;#27;[90m# login.HomePage()&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+West Pane is expanded already
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser opens West Pane tab on home page if not already open&amp;#27;[0m                                         &amp;#27;[90m# HomePageActions.openWestPanel()&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Financial Analysis Panel already expanded!
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser expands Financial Analysis tab if not already expanded&amp;#27;[0m                                       &amp;#27;[90m# HomePageActions.expandFinAnalysisPane()&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2018-02-07 17:39:50 INFO  CreateNewCompany:70 - Step:1-PASS-user clicks on Manage Company link under Financial Analysis tab
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser clicks on Manage Company link under Financial Analysis tab&amp;#27;[0m                                  &amp;#27;[90m# CreateNewCompany.openManageCompanyTab()&amp;#27;[0m
+INSIDE CONSTRUCTOR$$$$$$$$$$$$$$$$$$$$$$$$$$$
+2018-02-07 17:39:52 INFO  CreateNewCompany:89 - Step:2 PASSED- user clicks on the New button under Manage Company tab
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser clicks on the New button under Manage Company tab&amp;#27;[0m                                            &amp;#27;[90m# CreateNewCompany.clickOnNewButton()&amp;#27;[0m
+2018-02-07 17:39:53 INFO  CreateNewCompany:106 - Step:3 PASSED- user enters Company Name as TestCompanySachinS27
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Company Name as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTestCompanySachinS27&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                &amp;#27;[90m# CreateNewCompany.enterCompanyName(String)&amp;#27;[0m
+2018-02-07 17:39:55 INFO  CreateNewCompany:123 - Step:4 PASSED- user selects Company Type
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser selects Company Type as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mManufacturing&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                      &amp;#27;[90m# CreateNewCompany.selectCompanyType(String)&amp;#27;[0m
+2018-02-07 17:39:56 INFO  CreateNewCompany:157 - Step:5 PASSED- user selects Company SubType as Automobile
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser selects Company Subtype as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAutomobile&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                      &amp;#27;[90m# CreateNewCompany.selectCompanySubType(String)&amp;#27;[0m
+2018-02-07 17:39:58 INFO  CreateNewCompany:177 - Step:6 PASSED- user selects address as Pune
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Address as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPune&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# CreateNewCompany.enterAddress(String)&amp;#27;[0m
+2018-02-07 17:39:59 INFO  CreateNewCompany:193 - Step:7 PASSED- user enters phone as 9970365091
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Phone as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m9970365091&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                 &amp;#27;[90m# CreateNewCompany.enterPhone(String)&amp;#27;[0m
+2018-02-07 17:40:00 INFO  CreateNewCompany:209 - Step:8 PASSED- user enters email as test@gmail.com
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Email as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mtest@gmail.com&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                             &amp;#27;[90m# CreateNewCompany.enterEmail(String)&amp;#27;[0m
+2018-02-07 17:40:01 INFO  CreateNewCompany:225 - Step:9 PASSED- user enters pan as AYRPDS2234H
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Pan Details as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAYRPDS2234H&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                          &amp;#27;[90m# CreateNewCompany.enterPan(String)&amp;#27;[0m
+2018-02-07 17:40:03 INFO  CreateNewCompany:241 - Step:10 PASSED- user enters Tin Details as BYRPDS2234H
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Tin Details as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mBYRPDS2234H&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                          &amp;#27;[90m# CreateNewCompany.enterTin(String)&amp;#27;[0m
+2018-02-07 17:40:04 INFO  CreateNewCompany:257 - Step:11 PASSED - user enters mobile as 9970365092
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Mobile as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m9970365092&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# CreateNewCompany.enterMobile(String)&amp;#27;[0m
+2018-02-07 17:40:05 INFO  CreateNewCompany:273 - Step:12 PASSED- user enters Web Site as www.abcderf.com
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Web Site as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mwww.abcderf.com&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# CreateNewCompany.enterWebSite(String)&amp;#27;[0m
+2018-02-07 17:40:08 INFO  CreateNewCompany:290 - Step:13 PASSED - user selects Country as INDIA
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser selects Country as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mINDIA&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                   &amp;#27;[90m# CreateNewCompany.selectCountry(String)&amp;#27;[0m
+2018-02-07 17:40:10 INFO  CreateNewCompany:308 - Step:14 PASSED- user selects State as ANDHRA PRADESH
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser selects State as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mANDHRA PRADESH&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                            &amp;#27;[90m# CreateNewCompany.selectState(String)&amp;#27;[0m
+2018-02-07 17:40:12 INFO  CreateNewCompany:326 - Step:15 PASSED- user selects City as NIRMAL
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser selects City as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mNIRMAL&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# CreateNewCompany.selectCity(String)&amp;#27;[0m
+2018-02-07 17:40:13 INFO  CreateNewCompany:342 - Step:16 PASSED- user enters Total Employee as 1234
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser enters Total Employee as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1234&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                              &amp;#27;[90m# CreateNewCompany.enterEmployees(String)&amp;#27;[0m
+2018-02-07 17:40:15 INFO  CreateNewCompany:358 - Step:17 PASSED- user clicks on Save button
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser clicks on Save button&amp;#27;[0m                                                                        &amp;#27;[90m# CreateNewCompany.clickSave()&amp;#27;[0m
+Company created successfully
+2018-02-07 17:40:18 INFO  CreateNewCompany:376 - Step:18 PASSED- Company created succesfully
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mnew company gets created and listed on the first row of the first page as &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTestCompanySachinS27&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# CreateNewCompany.verifyNewlyAddedCompany(String)&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;LAPTOP-S9QV7E96&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d95d6b88-da91-4a35-8d96-d73056f43a7a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+	at ejagruti.finsys.modules.CreateNewCompany.AfterEveryScenario(CreateNewCompany.java:627)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:32)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:26)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:117)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:55)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:126)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 47 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 62 more
+&amp;#27;[0m
+</system-out>
+  </testcase>
+</testsuite>
