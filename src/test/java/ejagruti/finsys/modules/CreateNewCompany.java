@@ -784,7 +784,6 @@ public class CreateNewCompany {
 			public void verifyCompanyDeleted(String expectedCompanyDeletionMessage) throws InterruptedException, IOException {
 				try {
 				Thread.sleep(1000);
-					Thread.sleep(1000);
 				String actualCompanyDeletionMessage = manageCompanyTabObj.companyDeletedResult.getText();
 				Assert.assertEquals(expectedCompanyDeletionMessage, actualCompanyDeletionMessage);
 				
