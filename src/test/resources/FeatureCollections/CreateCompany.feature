@@ -44,7 +44,7 @@ Feature: Create Company
     And user opens West Pane tab on home page if not already open
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
-    And user selects a company named "TestCompanySachinS17"
+    And user selects a company named "TestCompanySachinS15"
     And user clicks on Destroy button
     And user clicks Ok on Confirm popup
     Then selected company gets deleted from the Manage Company tab with a message saying "Company Has Been Successfully Deleted!!!"
