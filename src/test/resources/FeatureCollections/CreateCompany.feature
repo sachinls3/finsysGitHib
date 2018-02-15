@@ -87,7 +87,7 @@ Feature: Create Company
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
     And user clicks on the New button under Manage Company tab
-    And user enters Company Name as "SachinTestCompany2"
+    And user enters Company Name as "SachinTestCompany20"
     And user selects Company Type as "Manufacturing"
     And user selects Company Subtype as "Automobile"
     And user enters Address as ""
@@ -101,7 +101,7 @@ Feature: Create Company
     And user selects State as "ANDHRA PRADESH"
     And user selects City as "NIRMAL"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "SachinTestCompany2"
+    Then new company gets created and listed on the first row of the first page as "SachinTestCompany20"
 
   @EndToEnd
   Scenario: Create Company with missing Country
