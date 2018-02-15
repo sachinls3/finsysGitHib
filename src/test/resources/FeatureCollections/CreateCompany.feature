@@ -36,7 +36,7 @@ Feature: Create Company
     And user selects City as "NIRMAL"
     And user enters Total Employee as "1234"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS27"
+    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS30"
 
   @SmokeTest
   Scenario: Delete a given Company from the list
