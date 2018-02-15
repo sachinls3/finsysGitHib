@@ -36,7 +36,7 @@ Feature: Create Company
     And user selects City as "NIRMAL"
     And user enters Total Employee as "1234"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS27"
+    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS30"
 
   @SmokeTest
   Scenario: Delete a given Company from the list
@@ -44,7 +44,7 @@ Feature: Create Company
     And user opens West Pane tab on home page if not already open
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
-    And user selects a company named "TestCompanySachinS21"
+    And user selects a company named "TestCompanySachinS18"
     And user clicks on Destroy button
     And user clicks Ok on Confirm popup
     Then selected company gets deleted from the Manage Company tab with a message saying "Company Has Been Successfully Deleted!!!"
