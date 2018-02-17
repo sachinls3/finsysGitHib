@@ -21,7 +21,7 @@ Feature: Create Company
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
     And user clicks on the New button under Manage Company tab
-    And user enters Company Name as "TestCompanySachinS27"
+    And user enters Company Name as "TestCompanySachinS31"
     And user selects Company Type as "Manufacturing"
     And user selects Company Subtype as "Automobile"
     And user enters Address as "Pune"
@@ -36,7 +36,7 @@ Feature: Create Company
     And user selects City as "NIRMAL"
     And user enters Total Employee as "1234"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS30"
+    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS31"
 
   @SmokeTest
   Scenario: Delete a given Company from the list
