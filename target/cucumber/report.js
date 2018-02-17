@@ -157,7 +157,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user selects a company named \"TestCompanySachinS17\"",
+  "name": "user selects a company named \"TestCompanySachinS15\"",
   "keyword": "And "
 });
 formatter.match({
