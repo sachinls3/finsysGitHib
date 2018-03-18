@@ -2,6 +2,7 @@ package ejagruti.finsys.modules;
 
 
 import java.awt.AWTException;
+
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
@@ -783,7 +784,7 @@ public class CreateNewCompany {
 			@Then ("^selected company gets deleted from the Manage Company tab with a message saying \"(.*)\"$")
 			public void verifyCompanyDeleted(String expectedCompanyDeletionMessage) throws InterruptedException, IOException {
 				try {
-				Thread.sleep(1000);//this is a comment
+				Thread.sleep(1000);
 				String actualCompanyDeletionMessage = manageCompanyTabObj.companyDeletedResult.getText();
 				Assert.assertEquals(expectedCompanyDeletionMessage, actualCompanyDeletionMessage);
 				
@@ -799,6 +800,42 @@ public class CreateNewCompany {
 							_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 				}
 				
+			}
+			
+			@And ("^user verifies State drop down values$")
+			public void verifyStateDropDownValues(List<String> expectedStateDropDownValues) throws IOException {
+				try {
+					
+					Select se = new Select (manageCompanyTabObj.state); 
+					List <WebElement> options = se.getOptions();
+					int i = 0;
+					
+					for (String str:expectedStateDropDownValues) {
+					String actualStateTypeDropDownValue = options.get(i+1).getText();
+					Assert.assertEquals(str, actualStateTypeDropDownValue);
+					i++;
+				};
+				
+				String _message = "Step:"+(counter++)+" PASSED- user verifies State drop down values";
+				logger.info(_message);
+				HTMLReportGenerator.StepDetails("PASS", "verifyStateDropDownValues", 
+						_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+				}
+				catch(AssertionError ex) {
+					String _message = "Step:"+(counter++)+" FAILED- user verifies State drop down values/nException: "+ex.getLocalizedMessage();
+					logger.info(_message);
+					HTMLReportGenerator.StepDetails("FAIL", "verifyStateDropDownValues", 
+							_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+					Assert.assertTrue(false);
+				}
+				catch(Exception ex) {
+					String _message = "Step:"+(counter++)+" FAILED- user verifies State drop down values/nException: "+ex.getLocalizedMessage();
+					logger.info(_message);
+					HTMLReportGenerator.StepDetails("FAIL", "verifyStateDropDownValues", 
+							_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+					Assert.assertTrue(false);
+				}
+				 
 			}
 			
 			@Before()

@@ -21,7 +21,7 @@ Feature: Create Company
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
     And user clicks on the New button under Manage Company tab
-    And user enters Company Name as "TestCompanySachinS36"
+    And user enters Company Name as "TestCompanySachinS27"
     And user selects Company Type as "Manufacturing"
     And user selects Company Subtype as "Automobile"
     And user enters Address as "Pune"
@@ -36,15 +36,15 @@ Feature: Create Company
     And user selects City as "NIRMAL"
     And user enters Total Employee as "1234"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS36"
+    Then new company gets created and listed on the first row of the first page as "TestCompanySachinS27"
 
-  @SmokeTest
+  @EndToEnd
   Scenario: Delete a given Company from the list
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
-    And user selects a company named "TestCompanySachinS16"
+    And user selects a company named "TestCompanySachinS19"
     And user clicks on Destroy button
     And user clicks Ok on Confirm popup
     Then selected company gets deleted from the Manage Company tab with a message saying "Company Has Been Successfully Deleted!!!"
@@ -87,7 +87,7 @@ Feature: Create Company
     And user expands Financial Analysis tab if not already expanded
     When user clicks on Manage Company link under Financial Analysis tab
     And user clicks on the New button under Manage Company tab
-    And user enters Company Name as "SachinTestCompany20"
+    And user enters Company Name as "SachinTestCompany2"
     And user selects Company Type as "Manufacturing"
     And user selects Company Subtype as "Automobile"
     And user enters Address as ""
@@ -101,7 +101,7 @@ Feature: Create Company
     And user selects State as "ANDHRA PRADESH"
     And user selects City as "NIRMAL"
     And user clicks on Save button
-    Then new company gets created and listed on the first row of the first page as "SachinTestCompany20"
+    Then new company gets created and listed on the first row of the first page as "SachinTestCompany2"
 
   @EndToEnd
   Scenario: Create Company with missing Country
@@ -138,8 +138,53 @@ Feature: Create Company
     And user clicks on the New button under Manage Company tab
     And user enters Company Name as "TestCompany"
     And user validates values in CompanyType drop down
-      |Manufacturing|
-      |IT|
-      |Consultancy Services1|
-      |Marketing|
-      |FMCG|
+      | Manufacturing         |
+      | IT                    |
+      | Consultancy Services1 |
+      | Marketing             |
+      | FMCG                  |
+
+  @SmokeTest
+  Scenario: Verify available States while creation of a New Company
+    Given user is on the application home page
+    And user opens West Pane tab on home page if not already open
+    And user expands Financial Analysis tab if not already expanded
+    When user clicks on Manage Company link under Financial Analysis tab
+    And user clicks on the New button under Manage Company tab
+    And user enters Company Name as "TestCompany"
+    And user selects Country as "India"
+    Then user verifies State drop down values
+      | ANDAMAN AND NICOBAR ISLANDS |
+      | ANDHRA PRADESH              |
+      | ARUNACHAL PRADESH	      		|
+      | ASSAM                       |
+      | BIHAR                       |
+      | CHHATTISGARH                |
+      | DADRA & NAGAR HAVELI        |
+      | DAMAN & DIU                 |
+      | DELHI                       |
+      | GOA                         |
+      | GUJARAT                     |
+      | HARYANA                     |
+      | HIMACHAL PRADESH            |
+      | JAMMU & KASHMIR             |
+      | JHARKHAND                   |
+      | KARNATAKA                   |
+      | KERALA                      |
+      | LAKSHADWEEP                 |
+      | MADHYA PRADESH              |
+      | MAHARASHTRA                 |
+      | MANIPUR                     |
+      | MEGHALAYA                   |
+      | MIZORAM                     |
+      | NAGALAND                    |
+      | ORISSA                      |
+      | PONDICHERRY                 |
+      | PUNJAB                      |
+      | RAJASTHAN                   |
+      | SIKKIM                      |
+      | TAMIL NADU                  |
+      | TRIPURA                     |
+      | UTTAR PRADESH               |
+      | UTTARAKHAND                 |
+      | WEST BENGAL                 |
