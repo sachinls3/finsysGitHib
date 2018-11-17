@@ -90,16 +90,16 @@ public class login {
 		  }
 	 
 	  @When("^user enters \"(.*)\" as username$")
-	  public void EnterUserName(String Username) throws Throwable
+	  public void EnterUserName(String Username1) throws Throwable
 	  {
 		  try {
-			loginpageobj.username.sendKeys(Username);
-			String message = "Step:"+(counter++)+" PASSED- user enters "+Username+" as username";
+			loginpageobj.username.sendKeys(Username1);
+			String message = "Step:"+(counter++)+" PASSED- user enters "+Username1+" as username";
 			logger.info(message);
 			HTMLReportGenerator.StepDetails("PASS", "EnterUserName", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 	  }
 		  catch(Exception ex) {
-			  String message = "Step:"+(counter++)+" FAILED- user enters "+Username+" as username\nException Details:"+ex.getLocalizedMessage();
+			  String message = "Step:"+(counter++)+" FAILED- user enters "+Username1+" as username\nException Details:"+ex.getLocalizedMessage();
 			  logger.info(message);
 			  HTMLReportGenerator.StepDetails("FAIL", "EnterUserName", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			  }
