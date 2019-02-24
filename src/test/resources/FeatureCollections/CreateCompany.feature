@@ -14,7 +14,7 @@ Feature: Create Company
     Then user is on the application home page
     And user gets the message starting with "Welcome" on the top
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Create Company with all valid inputs
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -38,7 +38,7 @@ Feature: Create Company
     And user clicks on Save button
     Then new company gets created and listed on the first row of the first page as "TestCompanySachinS27"
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Delete a given Company from the list
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -49,7 +49,7 @@ Feature: Create Company
     And user clicks Ok on Confirm popup
     Then selected company gets deleted from the Manage Company tab with a message saying "Company Has Been Successfully Deleted!!!"
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Create Company with missing Company Type
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -70,7 +70,7 @@ Feature: Create Company
     And user enters Total Employee as ""
     Then a modal dialog prompts saying "Please Select Company Type!!!" with Ok button for missing CompanyType value
 
-  @EndToEnd
+   @SmokeTest
   Scenario: Create Company with partial valid & partial invalid inputs with Company Name under 3 characters
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -80,7 +80,7 @@ Feature: Create Company
     And user enters Company Name as "ss"
     Then system shows a tooltip saying "Please enter a value between 3 and 20."
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Create Company by passing only mandatory details
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -103,7 +103,7 @@ Feature: Create Company
     And user clicks on Save button
     Then new company gets created and listed on the first row of the first page as "SachinTestCompany2"
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Create Company with missing Country
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -116,7 +116,7 @@ Feature: Create Company
     And user selects Country as ""
     Then a modal dialog prompts saying "Please Select Country!!!" with Ok button for missing Country value selection
 
-  @EndToEnd
+   @SmokeTest
   Scenario: Create Company with missing State
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
@@ -129,7 +129,7 @@ Feature: Create Company
     And user selects State as "ANDHRA PRADESH"
     Then a modal dialog prompts saying "Please Select State!!!" with Ok button for missing Country value selection
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Verify available Company Type while creation of a New Company
     Given user is on the application home page
     And user opens West Pane tab on home page if not already open
