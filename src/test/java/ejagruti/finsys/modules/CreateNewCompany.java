@@ -838,6 +838,43 @@ public class CreateNewCompany {
 				 
 			}
 			
+			@And ("^user verifies Country drop down values$")
+			public void verifyCountryDropDownValues(List<String> expectedCountryDropDownValues) throws IOException {				
+				try 
+				{
+					String actualCountryTypeDropDownValue=null;	
+					Select se = new Select (manageCompanyTabObj.countryid); 
+					List <WebElement> options = se.getOptions();
+					int i = 0;
+					
+					for (String str:expectedCountryDropDownValues) {
+					actualCountryTypeDropDownValue = options.get(i+1).getText();
+					Assert.assertEquals(str, actualCountryTypeDropDownValue);
+					i++;
+				};
+				
+				String _message = "Step:"+(counter++)+" PASSED- user verifies Country drop down value as "+actualCountryTypeDropDownValue;
+				logger.info(_message);
+				HTMLReportGenerator.StepDetails("PASS", "verifyCountryDropDownValues", 
+						_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+				}
+				catch(AssertionError ex) {
+					String _message = "Step:"+(counter++)+" FAILED- user verifies Country drop down values/nException: "+ex.getLocalizedMessage();
+					logger.info(_message);
+					HTMLReportGenerator.StepDetails("FAIL", "verifyCountryDropDownValues", 
+							_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+					Assert.assertTrue(false);
+				}
+				catch(Exception ex) {
+					String _message = "Step:"+(counter++)+" FAILED- user verifies Country drop down value as/nException: "+ex.getLocalizedMessage();
+					logger.info(_message);
+					HTMLReportGenerator.StepDetails("FAIL", "verifyCountryDropDownValues", 
+							_message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+					Assert.assertTrue(false);
+				}
+				 
+			}
+			
 			@Before()
 			public void BeforeEveryScenario(Scenario scenario)
 			{

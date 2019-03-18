@@ -156,7 +156,7 @@ Feature: Create Company
     Then user verifies State drop down values
       | ANDAMAN AND NICOBAR ISLANDS |
       | ANDHRA PRADESH              |
-      | ARUNACHAL PRADESH	      		|
+      | ARUNACHAL PRADESH	      	|
       | ASSAM                       |
       | BIHAR                       |
       | CHHATTISGARH                |
@@ -188,3 +188,14 @@ Feature: Create Company
       | UTTAR PRADESH               |
       | UTTARAKHAND                 |
       | WEST BENGAL                 |
+
+      @SmokeTest
+  Scenario: Verify available Country while creation of a New Company
+    Given user is on the application home page
+    And user opens West Pane tab on home page if not already open
+    And user expands Financial Analysis tab if not already expanded
+    When user clicks on Manage Company link under Financial Analysis tab
+    And user clicks on the New button under Manage Company tab
+    And user enters Company Name as "TestCompany"
+    Then user verifies Country drop down values
+      | INDIA |      
