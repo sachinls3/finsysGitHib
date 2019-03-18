@@ -885,6 +885,6 @@ public class CreateNewCompany {
 			@After()
 			public void AfterEveryScenario(Scenario scenario) {
 				counter = 0;
-//				baseclass.driver.close();
+				baseclass.driver.close();
 			}
 }
